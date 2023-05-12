@@ -1,6 +1,6 @@
 ---
 -name: IOS config
-    hosts: routers
+    hosts: 10.250.131.247
 
    task:
      - name: config mode command 01
