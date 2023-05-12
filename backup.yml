@@ -1,6 +1,6 @@
 ---
 -name: IOS config
-    hosts: routers
+    hosts: 
 
    task:
      - name: config mode command 01
