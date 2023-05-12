@@ -1,17 +1,17 @@
 ---
 -name: IOS config
- hosts: Cisco
+    hosts: routers
 
-task:
-  - name: config mode command 01
-    ios_config:
-      lines: 
-        - ip domain name logicworks.net
-  - name: configure interface with IP
-    ios_config:
-      parents: interface gigabitethernet1
-      lines:
-       - ip address 209.209.209.1 255.255.255.0 sec
-       - description <[ Ansible configured - AWX playbook ]>
-      diff_against: startup
-      save_when: modified
+   task:
+     - name: config mode command 01
+        ios_config:
+         lines: 
+           - ip domain name logicworks.net
+     - name: configure interface with IP
+        ios_config:
+          parents: interface gigabitethernet1
+          lines:
+           - ip address 209.209.209.1 255.255.255.0 sec
+           - description <[ Ansible configured - AWX playbook ]>
+          diff_against: startup
+          save_when: modified
