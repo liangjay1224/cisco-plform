@@ -1,6 +1,6 @@
 ---
 -name: IOS config
- host: Cisco
+ hosts: Cisco
 
 task:
   - name: config mode command 01
