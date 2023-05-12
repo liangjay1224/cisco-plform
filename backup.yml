@@ -1,6 +1,6 @@
 ---
 -name: IOS config
-    hosts: Cisco-routers
+    hosts: test1
 
    task:
      - name: config mode command 01
