@@ -1,7 +1,5 @@
 ---
 -name: IOS config
-    hosts: test1
-
    task:
      - name: config mode command 01
         ios_config:
